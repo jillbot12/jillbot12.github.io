@@ -1,0 +1,212 @@
+
+ROB's SUGGESTIONS:
+
+<div class="grid-item">
+	<img src=""/>
+	<div class="roll-over">
+		<a href="#">
+			click me
+		</a>
+	</div>
+</div>
+
+<div class="grid-item">
+	<img src=""/>
+	<div class="roll-over">
+		<a href="#">
+			click me
+		</a>
+	</div>
+</div>
+
+<div class="grid-item">
+	<img src=""/>
+	<div class="roll-over">
+		<a href="#">
+			click me
+		</a>
+	</div>
+</div>
+
+
+.grid-item {
+	position: relative;
+}
+
+.roll-over {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+///////////////
+
+
+/// Easy Rollover desaturate
+
+img:hover {
+/*  filter: gray; /* IE6-9 */
+/*  filter: grayscale(1); *//* Microsoft Edge and Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+///////
+
+WHERE THE ROLLOVER CODE BELOW CAME FROM: http://geekgirllife.com/place-text-over-images-on-hover-without-javascript/
+
+
+/// Place the text over the images ///
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+//// Show the text on hover
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+view raw
+
+
+/// Add animation
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
+
+
+
+
+OLD CODE
+
+.test {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.test1 img {
+  width: 100%;
+  margin-bottom: -3px;
+  padding: 20px;
+}
+
+.test1 ul{
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.test1 li {
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.test img {
+  width: 100%;
+}
+
+
+.overlay p {
+  /*display: table-cell;*/
+  vertical-align: middle;
+}
+
+.overlay:hover {
+  /*line-height: 1;*/
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(164,25,45,0.7);
+}
+
+span.text-content {
+  text-align: center;
+  vertical-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 275px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.overlay {
+  text-align: center;
+  vertical-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  cursor: pointer;
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+  /*left: 0;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*width: 100%;*/
+  opacity: 0;
+  /*line-height: 0;*/
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
