@@ -1,4 +1,8 @@
 
+$(document).ready(function() {
+
+
+
 var $grid = $('.grid');
 
 $grid.isotope({
@@ -73,5 +77,6 @@ $('ul.filter-list li').click(function() {
 	    }
 	});
 
+});
 
 // });
