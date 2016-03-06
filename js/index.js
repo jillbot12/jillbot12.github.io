@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+$(window).load(function() {
 
 
 
@@ -78,5 +78,3 @@ $('ul.filter-list li').click(function() {
 	});
 
 });
-
-// });
