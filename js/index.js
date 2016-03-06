@@ -24,6 +24,10 @@ $('ul.filter-list li').click(function() {
 	var current = $(this).attr('name');
 	//give the selected items the class of "active"
 	$(this).toggleClass('active');
+
+	if ($(this).parent().hasClass('foodgroup')) {
+		$(this).siblings().removeClass('active');
+	}
 	//if the current is all and all is clicked, everything shows
 	// if (current === 'all') {
 	// 	$grid.isotope({ filter: '*' });
@@ -40,8 +44,17 @@ $('ul.filter-list li').click(function() {
 			filterTerms.push(name);
 		});
 
+		if ($(this).parent().hasClass('foodgroup')) {
+
+
+
+		}	else { 
+
+
+		}
 		// Take all the filter terms and join them into a period-separated string (because isotope uses dots inbetween terms to use its filtering method).
 		filterTerms = '.' + filterTerms.join('.');
+
 
 		// If there are no filter terms (aka the strings have disappeared leaving a dot), just show all again
 		if (filterTerms === '.') {

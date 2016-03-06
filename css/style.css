@@ -448,16 +448,16 @@ header nav ul li a {
   font-weight: 400;
 }
 
-ul.filter-list.category-list.type-list {
+ul.filter-list.foodgroup.flavorgroup {
     float: right;
 }
 
-.category-list {
+.foodgroup {
 /*margin-left: 25%;*/
 float:right;
 }
 
-.type-list {
+.flavorgroup {
 /*margin-left: 25%;*/
 float:right;
 margin-right: 6px;
@@ -465,7 +465,7 @@ margin-top: -6px;
 margin-bottom: 6px;
 }
 
-.type-list li {
+.flavorgroup li {
 font-size: 18px;
 font-weight: 600;
 display: inline-block;
