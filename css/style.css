@@ -23,6 +23,7 @@ Developer @GA in NYC
   margin: 20px;
   position: relative;
   background: white;
+  padding-bottom: 25px;
 }
 
 .margin-container p {
@@ -46,10 +47,6 @@ Developer @GA in NYC
 }
 
 .title {
-/*  position: relative;
-  top: 50%;
-  text-align: center;
-  transform: translateY(-50%);*/
   text-align: left;
   font-size: 18px;
   line-height: 1.2em;
@@ -100,6 +97,38 @@ Developer @GA in NYC
 /*  margin-bottom: 2px;*/
 }
 
+.content-label {
+  height: 18px;
+  width: 20%;
+  border: 1px solid black;
+  float: right;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.content-label-up {
+  height: 18px;
+  width: 20%;
+  border: 1px solid black;
+  float: right;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.content-label-up p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:white;
+}
+
+.content-label p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 
 
 
@@ -107,13 +136,13 @@ Developer @GA in NYC
 /******************************************
 /* PACKERY / RESPONSIVE
 /*******************************************/
-
+/*
 @media screen and (max-width: 1300px) {
 
 .test1 a {
   font-size: 14px;
 }
-}
+}*/
 
 @media screen and (max-width: 1200px) {
 
@@ -156,10 +185,30 @@ Developer @GA in NYC
   position: relative;
 }
 
+.margin-container { 
+  margin: 20px;
+  position: relative;
+  background: white;
+}
+
+.margin-container p {
+  padding-bottom: 20px;
+
+}
+
+}
+
+@media screen and (max-width: 878px) {
+
+.menus {
+  width: 100%;
+}
+
 }
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 667px) {
 
 .grid-sizer {
   width: 50%;
@@ -171,13 +220,20 @@ Developer @GA in NYC
 }
 
 .margin-container { 
-  margin: 2px;
+  margin: 10px;
   position: relative;
+  background: white;
 }
+
+.margin-container p {
+  padding-bottom: 20px;
 
 }
 
-@media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 500px) {
 
 .grid-sizer {
   width: 100%;
@@ -188,9 +244,16 @@ Developer @GA in NYC
   margin-bottom: -9px;
 }
 
+
 .margin-container { 
-  margin: 2px;
+  margin: 20px;
   position: relative;
+  background: white;
+}
+
+.margin-container p {
+  padding-bottom: 20px;
+
 }
 
 }
@@ -259,6 +322,14 @@ p {
   line-height: 1.4;
 }
 
+p a {
+  text-decoration: underline;
+}
+
+hr {
+  float:left;
+}
+
 
 /******************************************
 /* LAYOUT
@@ -275,6 +346,7 @@ p {
 
 #tagline {
   font-style: italic;
+  font-size: 16px;
 }
 
 nav {
@@ -284,25 +356,51 @@ nav {
 }
 
 .minilogo img {
-  width: 45px;
+  width: 50px;
   float:left;
   display: inline-block;
   padding-left: 20px;
   margin-left: 20px;
-  padding-top: 25%;
+/*  padding-top: 20%;*/
 }
 
 .secretNav {
   display:none;
+  padding-top: 10px;
+}
+
+.logoleft {
+  display:inline-block;
+  padding-top: 0px;
 }
 
 .sticky {
   display: inline-block;
 }
 
+
+.secretNav li a{
+  font-size: 18px;
+  color: gray;
+  font-weight: 400;
+}
+
 .logoPanel {
   
 }
+
+.interior {
+  line-height: 45px;
+}
+
+.interior img {
+  width: 65px;
+  float:left;
+  display: inline-block;
+  padding-left: 40px;
+  padding-bottom: 4px;
+}
+
 
 header {
   background: white;
@@ -324,14 +422,31 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: black;
+/*  color: black;*/
 }
 
 .menus {
   width: 40%;
   float: right;
+  margin-right: 6px;
 }
 
+.aboutMenu {
+  float:left;
+  display: inline-block;
+  font-size: 18px;
+  color: gray;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.aboutMenu li {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 400;
+}
 
 ul.filter-list.category-list.type-list {
     float: right;
@@ -345,61 +460,290 @@ float:right;
 .type-list {
 /*margin-left: 25%;*/
 float:right;
-margin-right: 3%
+margin-right: 6px;
+margin-top: -6px;
+margin-bottom: 6px;
 }
 
 .type-list li {
-font-size: 14px;
+font-size: 18px;
 font-weight: 600;
 display: inline-block;
-
 }
 
 
-a:hover {
+/*a:hover {
     text-decoration: underline;
+}*/
+
+#forum a {
+  border: 2px solid white;
+  padding: 2px 4px;
 }
 
 #forum a:hover,
 #forum.active a {
-  text-decoration: underline;
+  border: 2px solid black;
+  padding: 2px 4px;
+}
+
+#project a {
+  border: 2px solid white;
+  padding: 2px 4px;
 }
 
 #project a:hover,
 #project.active a {
-  text-decoration: underline;
+  border: 2px solid black;
+  padding: 2px 4px;
 }
 
-#resource a:hover,
-#resource.active a {
-  text-decoration: underline;
+
+#resources a {
+  border: 2px solid white;
+  padding: 2px 4px;
 }
 
-#tribe a:hover,
+#resources a:hover,
+#resources.active a {
+  border: 2px solid black;
+  padding: 2px 4px;
+}
+
+
+#tribe a:link,
+#tribe a:visited,
 #tribe.active a {
   color:#8F00C7;
 }
+#tribe.active a {
+  text-decoration: underline;
+}
 
-#food a:hover,
+#food a:link,
+#food a:visited,
 #food.active a {
   color:#FF0D05;
 }
-
-#shelter a:hover,
-#shelter.active a {
-  color:#0BAEEA;
-
+#food.active a {
+  text-decoration: underline;
 }
 
-#magic a:hover,
+#shelter a:link,
+#shelter a:visited,
+#shelter.active a {
+  color: rgba(12,191,207,0.7)
+}
+#shelter.active a {
+  text-decoration: underline;
+}
+
+#magic a:link,
+#magic a:visited,
 #magic.active a {
   color: #FAC400;
+}
+#magic.active a {
+  text-decoration: underline;
 }
 
 
 .logo img {
   width: 100%;
   padding: 20px;
+}
+
+
+
+/******************************************
+/* RESOURCE PANEL
+/*******************************************/
+
+.parts {
+  width: 20%;
+  height: 100%;
+/*  margin: 0px auto;*/
+  background-color: white;
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+.parts h2 {
+  text-align: center;
+  margin: 0px auto;
+  font-size: 16px;
+  line-height: 1.2em;
+  padding: 20px;
+  color: black;
+  font-weight: 600;  
+  text-transform: uppercase;
+}
+
+.parts ul{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+
+.parts li {
+  font-size: 16px;
+  line-height: 1.4em;
+  color: black;
+  font-weight: 300;  
+  text-transform: lowercase;
+}
+
+
+.steps {
+  width: 100%;
+  float:left;
+  padding: 20px;
+  border: 1px solid #BFBFBF;
+}
+
+.steps h2 {
+  font-size: 24px;
+  line-height: 1.4em;
+  color: black;
+  text-transform: uppercase;
+
+}
+
+.stepSlider {
+  float:left;
+  width: 100%;
+}
+
+.steps img{
+  width: 40%;
+  float:left;
+  margin-right: 20px;
+}
+
+.stepsText {
+  width:50%;
+  float:left;
+}
+
+.stepsText p {
+  font-size: 24px;
+  text-align: left;
+  padding:10px 0px 20px ;
+}
+
+.stepsText h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.next {
+width: 100%;
+text-align: right; 
+float:right; 
+font-weight: 700;
+}
+
+.steps p {
+  float:left;
+  width: 100%;
+}
+
+
+.resource-container {
+  width: 75%;
+  height: 100%;
+/*  margin: 0px auto;*/
+  background-color: white;
+  margin-top: 20px;
+  float: left;
+}
+
+.resource-header img {
+  width: 100%;
+/*  padding-left: 20px;*/
+  float:left;
+}
+
+.resource-card {
+padding: 20px;
+float:left;
+background-color: white;
+}
+
+.resource-card img {
+  padding-bottom: 20px;
+}
+
+.resource-card-heading {
+  padding-bottom: 20px;
+}
+
+.resource-card h2 {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2em;
+  padding-bottom: 12px;
+  color: black;
+  font-weight: 600;  
+  float:left;
+}
+
+.resource-card h3 {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+  color: black;
+  font-weight: 600;  
+  float:left;
+  text-transform: uppercase;
+}
+
+.resource-card-description {
+  margin-bottom: 12px;
+  width: 100%;
+  float:left;
+}
+
+.resource-card-description p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4em;
+  padding: 10px 0px;
+  color: black;
+  font-weight: 200;  
+  float:left;
+  width: 75%;
+}
+
+.resource-card h1 {
+  text-align: left;
+  font-size: 54px;
+  line-height: 1.2em;
+  padding-bottom: 12px;
+  color: black;
+  font-weight: 700;  
+  float:left;
+  width: 75%;
+
+}
+
+.resource-card h2 {
+  text-align: left;
+/*  font-size: 54px;*/
+  line-height: 1.2em;
+  padding-bottom: 12px;
+  color: black;
+  font-weight: 600;  
+  float:left;
+  width: 75%;
+
 }
 
 
@@ -455,7 +799,7 @@ background-color: white;
 .project-card p {
   text-align: left;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   padding: 10px 0px;
   color: black;
   font-weight: 200;  
@@ -471,7 +815,19 @@ background-color: white;
   color: black;
   font-weight: 700;  
   float:left;
-  width: 100%;
+  width: 75%;
+
+}
+
+.project-card h2 {
+  text-align: left;
+/*  font-size: 54px;*/
+  line-height: 1.2em;
+  padding-bottom: 12px;
+  color: black;
+  font-weight: 600;  
+  float:left;
+  width: 75%;
 
 }
 
@@ -523,6 +879,7 @@ background-color: white;
   clear:both;
   text-transform: uppercase;
   padding-top: 40px;
+  padding-left: 20px;
 }
 
 .projectsPage {
