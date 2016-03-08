@@ -1010,7 +1010,7 @@ background-color: white;
 /*changed width from 33.3 to 25 to test on github cuz it is weird*/
 
 .projects { 
-  width: 25%;
+  width: 33.3%;
   margin-bottom: -9px;
   /*margin-left: 4px;*/
   /*position: relative;*/
