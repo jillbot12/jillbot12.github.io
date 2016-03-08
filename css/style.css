@@ -1007,8 +1007,10 @@ background-color: white;
 /* .projects is a class that gets attached to .grid-sizer and .grid-item to change their format to three columns on project pages
 .projectsMargin gets attached to the .margin-container class to adjust the column width on those pages, though it may stay the same and therefore can get deleted.*/
 
+/*changed width from 33.3 to 25 to test on github cuz it is weird*/
+
 .projects { 
-  width: 33.3%;
+  width: 25%;
   margin-bottom: -9px;
   /*margin-left: 4px;*/
   /*position: relative;*/
@@ -1024,7 +1026,7 @@ background-color: white;
 
 .page-wrap { 
   width: 100%; 
-  margin: 20px 980px; 
+  margin: 20px 980spx; 
   position: relative; 
 }
 
