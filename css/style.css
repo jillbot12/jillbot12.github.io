@@ -1024,7 +1024,7 @@ background-color: white;
 
 .page-wrap { 
   width: 100%; 
-  margin: 20px 1000px; 
+  margin: 20px 980px; 
   position: relative; 
 }
 
@@ -1038,7 +1038,7 @@ background-color: white;
   background-color: white;
   margin-top: 20px;
   float: left;
-  margin-left: 10px;
+  margin-left: 5px;
 /*  position: -webkit-sticky;  // required for Safari
   position: sticky;
   top: 50px; // required as well.
