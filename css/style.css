@@ -301,7 +301,8 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-background-color: #F7F7F7;
+/*background-color: #F7F7F7;*/
+background-color: #F0F0F0;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -364,6 +365,20 @@ nav {
 /*  padding-top: 20%;*/
 }
 
+.social img {
+  width: 25px;
+  float:left;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.social2 img {
+  width: 25px;
+  float:left;
+  display: inline-block;
+  margin-left: -10px;
+}
+
 .secretNav {
   display:none;
   padding-top: 10px;
@@ -372,6 +387,9 @@ nav {
 .logoleft {
   display:inline-block;
   padding-top: 0px;
+  font-size: 18px;
+  color: gray;
+  font-weight: 400;
 }
 
 .sticky {
@@ -390,16 +408,18 @@ nav {
 }
 
 .interior {
-  line-height: 45px;
+  line-height: 65px;
+  color:gray;
 }
 
 .interior img {
-  width: 65px;
+  width: 50px;
   float:left;
   display: inline-block;
-  padding-left: 40px;
-  padding-bottom: 4px;
+  padding-left: 20px;
+  margin-left: 20px;
 }
+
 
 
 header {
@@ -461,7 +481,7 @@ float:right;
 /*margin-left: 25%;*/
 float:right;
 margin-right: 6px;
-margin-top: -6px;
+margin-top: -3px;
 margin-bottom: 6px;
 }
 
@@ -487,6 +507,11 @@ display: inline-block;
   padding: 2px 4px;
 }
 
+#forum-engaged {
+  border: 2px solid black;
+  padding: 2px 4px;
+}
+
 #project a {
   border: 2px solid white;
   padding: 2px 4px;
@@ -498,6 +523,10 @@ display: inline-block;
   padding: 2px 4px;
 }
 
+#project-engaged {
+  border: 2px solid black;
+  padding: 2px 4px;
+}
 
 #resources a {
   border: 2px solid white;
@@ -510,41 +539,68 @@ display: inline-block;
   padding: 2px 4px;
 }
 
+#resources-engaged {
+  border: 2px solid black;
+  padding: 2px 4px;
+}
 
-#tribe a:link,
+
+/*#tribe a:link,
 #tribe a:visited,
 #tribe.active a {
   color:#8F00C7;
 }
 #tribe.active a {
   text-decoration: underline;
+}*/
+
+
+#tribe a,
+#tribe a:visited {
+  color:#8F00C7;
+  padding:2px 4px;
 }
 
-#food a:link,
+#tribe.active a {
+  color: white;
+  background-color: #8F00C7;
+  padding:2px 4px;
+}
+
+#food a,
 #food a:visited,
 #food.active a {
   color:#FF0D05;
+  padding:2px 4px;
 }
 #food.active a {
-  text-decoration: underline;
+  color: white;
+  background-color:#FF0D05;
+  padding:2px 4px;
 }
 
-#shelter a:link,
+#shelter a,
 #shelter a:visited,
 #shelter.active a {
-  color: rgba(12,191,207,0.7)
+  color: rgb(12,191,207);
+  padding:2px 4px;
 }
 #shelter.active a {
-  text-decoration: underline;
+  color: white;
+  background-color: rgb(12,191,207);
+  padding:2px 4px;
 }
 
-#magic a:link,
+#magic a,
 #magic a:visited,
 #magic.active a {
   color: #FAC400;
+  padding:2px 4px;
 }
 #magic.active a {
-  text-decoration: underline;
+  color: white;
+  background-color: #FAC400;
+  padding:2px 4px;
 }
 
 
@@ -599,10 +655,10 @@ display: inline-block;
 
 
 .steps {
-  width: 100%;
+  width: 80%;
   float:left;
   padding: 20px;
-  border: 1px solid #BFBFBF;
+  border: 2px solid black;
 }
 
 .steps h2 {
@@ -615,32 +671,19 @@ display: inline-block;
 
 .stepSlider {
   float:left;
-  width: 100%;
+  width: 50%;
+/*  width: 40%;*/
+}
+
+.stepSlider li {
+  display: inline-block;
 }
 
 .steps img{
-  width: 40%;
+/*  width: 100%;*/
   float:left;
-  margin-right: 20px;
+  margin-right: 10px;
 }
-
-.stepsText {
-  width:50%;
-  float:left;
-}
-
-.stepsText p {
-  font-size: 24px;
-  text-align: left;
-  padding:10px 0px 20px ;
-}
-
-.stepsText h3 {
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-}
-
 
 .next {
 width: 100%;
@@ -654,13 +697,20 @@ font-weight: 700;
   width: 100%;
 }
 
+.resourcePage {
+  width: 70%;
+  float: left;
+  margin-left: 80px;
+}
+
 
 .resource-container {
-  width: 75%;
+  width: 70%;
   height: 100%;
 /*  margin: 0px auto;*/
   background-color: white;
   margin-top: 20px;
+  margin-left: 60px;
   float: left;
 }
 
@@ -671,17 +721,29 @@ font-weight: 700;
 }
 
 .resource-card {
-padding: 20px;
+padding: 40px 0px 20px 80px;
 float:left;
 background-color: white;
 }
 
 .resource-card img {
   padding-bottom: 20px;
+  width: 80%;
 }
 
 .resource-card-heading {
   padding-bottom: 20px;
+}
+
+.resource-card p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4em;
+  padding: 10px 0px;
+  color: black;
+  font-weight: 200;  
+  float:left;
+  width: 75%;
 }
 
 .resource-card h2 {
@@ -752,12 +814,13 @@ background-color: white;
 /*******************************************/
 
 .project-container {
-  width: 75%;
+  width: 70%;
   height: 100%;
 /*  margin: 0px auto;*/
   background-color: white;
   margin-top: 20px;
   float: left;
+  margin-left: 60px;
 }
 
 .project-container img {
@@ -767,13 +830,14 @@ background-color: white;
 }
 
 .project-card {
-padding: 20px;
+padding: 40px 60px 20px 60px;
 float:left;
 background-color: white;
 }
 
 .project-card img {
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .project-card-heading {
@@ -794,6 +858,13 @@ background-color: white;
   margin-bottom: 12px;
   width: 100%;
   float:left;
+}
+
+.project-card-description p {
+  margin-bottom: 12px;
+  width: 100%;
+  float:left;
+  padding-bottom: 20px;
 }
 
 .project-card p {
@@ -831,6 +902,10 @@ background-color: white;
 
 }
 
+.tabs {
+  clear:both;
+}
+
 .tribe-tab {
   background: rgba(143,0,199,0.7);
   height: 14px;
@@ -866,13 +941,56 @@ background-color: white;
 .slideshow {
   margin-top: 12px;
   margin-right: 12px;
-  width: 75%;
-  float:left;
-
+  width: 100%;
+  clear:both;
 }
 
 .caption {
   float:left;
+}
+
+.forwardBack {
+  padding-top: 20px;
+  width: 68.3%;
+  margin-left: 80px;
+  clear: both;
+}
+
+.forwardBack-resource {
+  padding-top: 20px;
+  width: 68%;
+  margin-left: 100px;
+  clear: both;
+}
+.forwardBack-resource img {
+  width: 60px;
+}
+
+.clickLeft ul {
+  float: left;
+}
+
+.clickLeft li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.clickRight ul {
+  float: right;
+}
+
+.clickRight li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.clickRightResource li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.forwardBack img {
+  width: 60px;
 }
 
 .more {
@@ -880,11 +998,21 @@ background-color: white;
   text-transform: uppercase;
   padding-top: 40px;
   padding-left: 20px;
+  margin-left: 60px;
+}
+
+.more-resource {
+  clear:both;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-left: 20px;
+  margin-left: 80px;
 }
 
 .projectsPage {
-  width: 75%;
+  width: 70%;
   float: left;
+  margin-left: 60px;
 }
 
 /* .projects is a class that gets attached to .grid-sizer and .grid-item to change their format to three columns on project pages
@@ -905,7 +1033,153 @@ background-color: white;
 
 
 
+.page-wrap { 
+  width: 100%; 
+  margin: 20px 1000px; 
+  position: relative; 
+}
 
 
+
+.sidebar {
+  width: 20%;
+  position: fixed; 
+/*  height: 100%;*/
+/*  margin: 0px auto;*/
+  background-color: white;
+  margin-top: 20px;
+  float: left;
+  margin-left: 10px;
+/*  position: -webkit-sticky;  // required for Safari
+  position: sticky;
+  top: 50px; // required as well.
+*/}
+
+.sidebar img {
+  width:100%;
+}
+
+.sidebar p {
+font-size: 14px;
+padding: 10px 10px;
+}
+
+.sidebar ul{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+}
+
+.sidebar li {
+  font-size: 16px;
+  line-height: 1.4em;
+  color: black;
+  font-weight: 300;  
+  text-transform: lowercase;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin: 0px auto;
+  font-size: 16px;
+  line-height: 1.2em;
+  padding: 20px;
+  color: black;
+  font-weight: 600;  
+  text-transform: uppercase;
+}
+
+.sidebar-label-up {
+  border: 1px solid black;
+  background-color: black;
+}
+
+
+/******************************************
+/* ABOUT PAGE
+/*******************************************/
+
+#about-engaged {
+  border: 2px solid gray;
+  padding: 1px 4px;
+}
+
+.whats {
+  width: 33.3%;
+  float:left;
+  padding:5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.whats p {
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.whats img {
+  float: left;
+}
+
+.whats h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.who h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.whatsTitle h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/******************************************
+/* CONTACT PAGE
+/*******************************************/
+
+#contact-engaged {
+  border: 2px solid gray;
+  padding: 1px 4px;
+}
+
+.contactInfo {
+  width:75%;
+  padding-top: 20px;
+}
+
+
+.contactInfo p {
+  text-align: left;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.contactInfo img {
+  float: left;
+}
+
+.contactInfo h2 {
+  text-align: left;
+  width: 100%;
+}
 
 
