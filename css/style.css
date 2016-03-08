@@ -927,6 +927,14 @@ background-color: white;
   margin-bottom: 12px;
 }
 
+.blank-tab {
+  background: white;
+  height: 14px;
+  width: 20%;
+  float:left;
+  margin-bottom: 12px;
+}
+
 .slideshow {
   margin-top: 12px;
   margin-right: 12px;
