@@ -22,7 +22,7 @@ $(function() {
     var $sidebar   = $(".sidebar"), 
         $window    = $(window),
         offset     = $sidebar.offset(),
-        topPadding = 15;
+        topPadding = 20;
 
     $window.scroll(function() {
         if ($window.scrollTop() > offset.top) {
