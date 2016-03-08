@@ -56,8 +56,6 @@ Developer @GA in NYC
   text-transform: uppercase;
 }
 
-
-
 .tribe-item {
   /*background: rgba(164,25,45,0.7);*/
   background: rgba(143,0,199,0.7);
@@ -302,7 +300,7 @@ Developer @GA in NYC
 
 body {
 /*background-color: #F7F7F7;*/
-background-color: #F0F0F0;
+  background-color: #F0F0F0;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -337,6 +335,26 @@ hr {
 /*******************************************/
 
 
+header {
+  background: white;
+  padding: 5px 0;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+header nav {
+  margin-top: 2px;
+}
+
+header nav ul li {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: inline-block;
+  font-size: 22px;
+  padding: 0px 10px;
+  line-height: 25px;
+  vertical-align: middle;
+}
+
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -345,13 +363,7 @@ hr {
   width: 100%;
 }
 
-#tagline {
-  font-style: italic;
-  font-size: 16px;
-}
-
 nav {
-/*  float: right;*/
   margin-right: 20px;
   margin-top: 5px;
 }
@@ -368,29 +380,29 @@ nav {
 .social img {
   width: 25px;
   float:left;
-  display: inline-block;
-  margin-left: 5px;
+  margin: 5px 0;
 }
 
-.social2 img {
+/*.social2 img {
   width: 25px;
   float:left;
   display: inline-block;
-  margin-left: -10px;
-}
+  margin-left: 5px;
+}*/
 
 .secretNav {
   display:none;
   padding-top: 10px;
+  padding-right:10px;
 }
 
-.logoleft {
+/*.logoleft {
   display:inline-block;
   padding-top: 0px;
   font-size: 18px;
   color: gray;
   font-weight: 400;
-}
+}*/
 
 .sticky {
   display: inline-block;
@@ -403,8 +415,39 @@ nav {
   font-weight: 400;
 }
 
-.logoPanel {
-  
+#tagline {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.menus {
+  width: 30%;
+  float: right;
+/*  margin-right: 6px;*/
+}
+
+.aboutMenu {
+  float:left;
+  display: inline-block;
+  font-size: 18px;
+  color: gray;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: -18px;
+}
+
+.aboutMenu li {
+  display: inline-block;
+  margin: 8px;
+/*  padding: -20px 10px;*/
+  font-weight: 400;
+}
+
+ul.filter-list.foodgroup.flavorgroup {
+    float: none;
+    text-align: center;
 }
 
 .interior {
@@ -420,67 +463,17 @@ nav {
   margin-left: 20px;
 }
 
-
-
-header {
-  background: white;
-  padding: 5px 0;
-  overflow: hidden;
-  margin-bottom: 5px;
-}
-
-header nav {
-  margin-top: 2px;
-}
-header nav ul li {
-  font-family: 'Roboto Condensed', sans-serif;
-  display: inline-block;
-  font-size: 22px;
-  padding: 0px 10px;
-  line-height: 25px;
-  vertical-align: middle;
-}
-
-header nav ul li a {
-/*  color: black;*/
-}
-
-.menus {
-  width: 40%;
-  float: right;
-  margin-right: 6px;
-}
-
-.aboutMenu {
-  float:left;
-  display: inline-block;
-  font-size: 18px;
-  color: gray;
-  width: 100%;
-  margin: 0px auto;
-  text-align: center;
-  margin-top: -12px;
-}
-
-.aboutMenu li {
-  display: inline-block;
-  padding: 5px;
-  font-weight: 400;
-}
-
-ul.filter-list.foodgroup.flavorgroup {
-    float: right;
-}
-
 .foodgroup {
 /*margin-left: 25%;*/
-float:right;
+float:none;
+width:100%;
 }
 
 .flavorgroup {
 /*margin-left: 25%;*/
-float:right;
-margin-right: 6px;
+float:none;
+width: 100%;
+/*margin-right: 6px;*/
 margin-top: -3px;
 margin-bottom: 6px;
 }
@@ -543,16 +536,6 @@ display: inline-block;
   border: 2px solid black;
   padding: 2px 4px;
 }
-
-
-/*#tribe a:link,
-#tribe a:visited,
-#tribe.active a {
-  color:#8F00C7;
-}
-#tribe.active a {
-  text-decoration: underline;
-}*/
 
 
 #tribe a,
@@ -1165,7 +1148,6 @@ padding: 10px 10px;
   width:75%;
   padding-top: 20px;
 }
-
 
 .contactInfo p {
   text-align: left;
