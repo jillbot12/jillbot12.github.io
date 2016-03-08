@@ -1021,16 +1021,11 @@ background-color: white;
   background: white;
 }
 
-
-
-
 .page-wrap { 
   width: 100%; 
-  margin: 20px 980spx; 
+  margin: 20px 980px; 
   position: relative; 
 }
-
-
 
 .sidebar {
   width: 20%;
