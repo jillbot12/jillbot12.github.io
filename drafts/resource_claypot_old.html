@@ -4,7 +4,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Design and Ideas for the End Times.">
 
-		<title>LEARN: How to Make a Clay Pot Oven</title>
+		<title>RESOURCE: Clay Pot Oven</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 
 		<!-- external CSS link -->
@@ -12,7 +12,8 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- external CSS link for unslider slide show plugin -->
-		<link rel="stylesheet" href="css/flickity.css" media="screen">
+		<link rel="stylesheet" href="unslider-master/dist/css/unslider.css">
+		<link rel="stylesheet" href="unslider-master/dist/css/unslider-dots.css">
 
 
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -28,36 +29,44 @@
 						</li>
 						<li><a href="/about.html">ABOUT</a></li>
 						<li><a href="/contact.html">CONTACT</a></li>
-						<li><a href="#">SEARCH</a></li>
+						<li><a href="/index.html">SEARCH</a></li>
 						<li class="social"><img src="images/mpex_facebook.png"/></li>
 						<li class="social"><img src="images/mpex_twitter.png"/></li>
 					</ul>
+<!-- 					<div class="menus">
+					<ul class="filter-list foodgroup">
+						<li id="forum" name="forum"><a href="#">FORUM</a></li>
+						<li id="project" name="project"><a href="#">PROJECTS</a></li>
+						<li id="resources-engaged" name="resource"><a href="#">RESOURCES</a></li>
+					</ul>
+					<ul class="filter-list flavorgroup">
+							<li id="tribe" name="tribe"><a href="#">TRIBE</a></li>
+							<li id="food" name="food"><a href="#">FOOD</a></li>
+							<li id="shelter" name="shelter"><a href="#">SHELTER</a></li>
+							<li id="magic" name="magic"><a href="#">MAGIC</a></li>
+					</ul> -->
 				</nav>
 		</header>
 			<div class="main">
 				<div class="project-container">
 					<div class="project-card">
 						<div class="project-card-heading">
-						<h1>LEARN: How to Make a Clay Pot Oven</h1>
+						<h1>Build a Clay Pot Oven</h1>
 							<div class="tabs"></div>
-								<div class="tribe-tab"></div><div class="food-tab"></div><div class="shelter-tab"></div><div class="magic-tab"></div>
-							</div>
-						<p>From: WILDER Compound<br>
-						<a href="http://www.wilder.is">www.wilder.is</a></p>
-						<div class="project-header">
-							<img src="images/mpex_resources_clayoven_01.jpg"/>
-						</div>
+								<div class="food-tab"></div><div class="blank-tab"></div>
+							</div><p>FROM: WILDER Compound</p>
+					<img src="images/mpex_resources_clayoven_02.jpg"/>
+
 						<div class="project-card-description">
-							<p>This workshop came directly from the <a href="http://www.engr.psu.edu/mtah/projects/claypot_oven.htm">Penn State tutorial</a>. This can be a great mini-earth oven project to do if, like in our case, the time of year for building with mud outdoors has not arrived, or the right space to install an outdoor oven has not yet been located.</p><p>Prep time: 3 hours Cooking time: 1-2 hours Serves: 2-6 people</p>
-							<h1>Instructions:</h1>
+							<p>This workshop came directly from the <a href="http://www.engr.psu.edu/mtah/projects/claypot_oven.htm">Penn State tutorial</a>. This can be a great mini-earth oven project to do if, like in our case, the time of year for building with mud outdoors has not arrived, or the right space to install an outdoor oven has not yet been located.</p><p>Prep time: 3 hours Cooking time: 1-2 hours Serves: 2-6 people </p>
 							<div class="slideshow">
-								<div class="slideboxLearn">
-									<div class="carousel js-flickity">
-									  <div class="carousel-cell"><img src="images/mpex_claypot_steps1.jpg"></div>
-									  <div class="carousel-cell"><img src="images/mpex_claypot_steps2.jpg"></div>
-									  <div class="carousel-cell"><img src="images/mpex_claypot_steps3.jpg"></div>
-									  <div class="carousel-cell"><img src="images/mpex_claypot_steps4.jpg"></div>
-									</div>
+								<div class="my-slider">
+									<ul>
+										<li><img src="images/mpex_claypot_steps1.jpg"></li>
+										<li><img src="images/mpex_claypot_steps2.jpg"></li>
+										<li><img src="images/mpex_claypot_steps3.jpg"></li>
+										<li><img src="images/mpex_claypot_steps4.jpg"></li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -87,16 +96,17 @@
 					</ul>
 				</div>
 			</div>
+			</div>
 			<div class="forwardBack">
 				<div class="clickLeft">
 					<ul>
 						<li><img src="images/mpex_shortarrow_left.png"></li>
-						<li><p>Previous Project</p></li>
+						<li><p>Previous Resource</p></li>
 					</ul>
 				</div>
 				<div class="clickRight">
 					<ul>
-						<li><p>Next Project</p></li>
+						<li><p>Next Resource</p></li>
 						<li><img src="images/mpex_shortarrow_right.png"></li>
 					</ul>
 				</div>	
@@ -226,7 +236,13 @@
 	<script src="unslider-master/dist/js/unslider-min.js"></script>
 	<script src="unslider-master/src/js/unslider.js"></script>
 
-<script src="js/flickity.pkgd.min.js"></script>
+<!-- 
+<script>
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider();
+		});
+</script>
+-->
 
 	</body>
 </html>

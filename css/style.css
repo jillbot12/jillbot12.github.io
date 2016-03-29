@@ -923,7 +923,12 @@ background-color: white;
 
 .project-header img {
   padding-bottom: 20px;
-  max-width: 75%;
+  max-width: 80%;
+}
+
+.project-header-about img {
+  padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .project-card-heading {
@@ -1208,11 +1213,13 @@ padding: 10px 10px;
 .whats p {
   text-align: center;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+
 }
 
 .whats img {
   float: left;
+  max-width: 100%;
 }
 
 .whats h2 {
