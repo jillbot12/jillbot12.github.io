@@ -1197,9 +1197,31 @@ padding: 10px 10px;
 /* ABOUT PAGE
 /*******************************************/
 
-#about-engaged {
+/*#about-engaged {
   border: 2px solid gray;
   padding: 1px 4px;
+}*/
+
+#about-engaged {
+  background-color: gray;
+  padding: 2px 4px;
+  margin-top: -20px;
+  margin-left: 8px;
+}
+
+#about-engaged a {
+  color: white;
+}
+
+#about {
+  background-color: white;
+  padding: 2px 4px;
+  margin-top: -20px;
+  margin-left: 8px;
+}
+
+#about-engaged a {
+  color: gray;
 }
 
 .whats {
