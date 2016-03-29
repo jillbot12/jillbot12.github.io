@@ -12,8 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<!-- external CSS link for unslider slide show plugin -->
-		<link rel="stylesheet" href="unslider-master/dist/css/unslider.css">
-		<link rel="stylesheet" href="unslider-master/dist/css/unslider-dots.css">
+		<link rel="stylesheet" href="css/flickity.css" media="screen">
 
 
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -33,18 +32,6 @@
 						<li class="social"><img src="images/mpex_facebook.png"/></li>
 						<li class="social"><img src="images/mpex_twitter.png"/></li>
 					</ul>
-<!-- 					<div class="menus">
-					<ul class="filter-list foodgroup">
-						<li id="forum" name="forum"><a href="#">FORUM</a></li>
-						<li id="project-engaged" name="project"><a href="#">PROJECTS</a></li>
-						<li id="resources" name="resource"><a href="#">RESOURCES</a></li>
-					</ul>
-					<ul class="filter-list flavorgroup">
-							<li id="tribe" name="tribe"><a href="#">TRIBE</a></li>
-							<li id="food" name="food"><a href="#">FOOD</a></li>
-							<li id="shelter" name="shelter"><a href="#">SHELTER</a></li>
-							<li id="magic" name="magic"><a href="#">MAGIC</a></li>
-					</ul> -->
 				</nav>
 		</header>
 			<div class="main">
@@ -57,18 +44,20 @@
 							</div>
 						<p>ARTIST: Jill Allyn Peterson<br>
 						WEBSITE: www.wilder.is</p>
-					<img src="images/MPEX_projects_Wilder_01.jpg"/>
+						<div class="project-header">
+							<img src="images/MPEX_projects_Wilder_01.jpg"/>
+						</div>
 
 						<div class="project-card-description">
 							<p>Workshop leaders include Molly Rose Kaufman (community organizing), Sara Morris and the Mello Velo team (bike repair), Jessica Maxwell and Jessi Lyons of  Southwest Community Farm (grow your own food), Kelley Sullivan (geodesic dome), and with support from Jillian Nakornthap of 601 Tully.</p><p>The WILDER Compound project is a workshop series created in conjunction with The Modern Primitive Exchange (MPEx) for Spring 2014. It will bring students from Syracuse University together with students from the local community to collaboratively build a hub for learning about sustainability and cultivating self-reliance. Through the construction of a geodesic greenhouse, growing food, building an earth oven, learning bike repair, building bike-powered phone chargers and gaining expertise in online community building, this series is an incubator for cultivating self-reliant communities.</p><p>Support from Edward Morris and Susannah Sayler from The Canary Project and Ethany Uttech, project director of the Modern Primitive Exchange Workshop series.
 							</p>
 							<div class="slideshow">
-								<div class="my-slider">
-									<ul>
-										<li><img src="images/mpex_projects_wilder_02.jpg"></li>
-										<li><img src="images/mpex_projects_wilder_03.jpg"></li>
-										<li><img src="images/mpex_projects_wilder_04.jpg"></li>
-									</ul>
+								<div class="slidebox">
+									<div class="carousel js-flickity">
+									  <div class="carousel-cell"><img src="images/mpex_projects_wilder_02.jpg"></div>
+									  <div class="carousel-cell"><img src="images/mpex_projects_wilder_03.jpg"></div>
+									  <div class="carousel-cell"><img src="images/mpex_projects_wilder_04.jpg"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -220,13 +209,7 @@
 	<script src="unslider-master/dist/js/unslider-min.js"></script>
 	<script src="unslider-master/src/js/unslider.js"></script>
 
-<!-- 
-<script>
-		jQuery(document).ready(function($) {
-			$('.my-slider').unslider();
-		});
-</script>
--->
+<script src="js/flickity.pkgd.min.js"></script>
 
 	</body>
 </html>

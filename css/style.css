@@ -159,8 +159,16 @@ Developer @GA in NYC
   /*position: relative;*/
  }
 .margin-container { 
-  margin: 2px;
+  margin: 20px;
   position: relative;
+}
+
+.aboutMenu li {
+  font-size: 14px;
+}
+
+#tagline {
+  display: none;
 }
 
 }
@@ -184,22 +192,38 @@ Developer @GA in NYC
 }
 
 .margin-container { 
-  margin: 20px;
+  margin: 10px;
   position: relative;
   background: white;
 }
 
 .margin-container p {
   padding-bottom: 20px;
+}
 
+#tagline {
+  display: none;
 }
 
 }
+
+
+@media screen and (max-width: 1400px) {
+
+.menus {
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+}
+
+
 
 @media screen and (max-width: 1200px) {
 
 .menus {
-  padding-left: 5%;
+  padding-left: 0%;
+  margin-left: 0%;
 }
 
 }
@@ -209,7 +233,12 @@ Developer @GA in NYC
 @media screen and (max-width: 878px) {
 
 .menus {
-  width: 50%;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+#tagline {
+  display: none;
 }
 
 }
@@ -217,6 +246,12 @@ Developer @GA in NYC
 
 
 @media screen and (max-width: 667px) {
+
+.menus {
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
 
 .grid-sizer {
   width: 50%;
@@ -235,6 +270,13 @@ Developer @GA in NYC
 
 .margin-container p {
   padding-bottom: 20px;
+
+}
+
+.aboutMenu li {
+  font-size: 18px;
+  padding-top: 5px;
+  margin-bottom: 5px;
 
 }
 
@@ -261,6 +303,13 @@ Developer @GA in NYC
 
 .margin-container p {
   padding-bottom: 20px;
+
+}
+
+#tagline {
+  display: inline;
+  width: 100%;
+  float:none;
 
 }
 
@@ -379,8 +428,9 @@ nav {
 }
 
 
-.innerPage {
-margin-bottom:40px;
+
+.innerPage ul li {
+padding-bottom:20px;
 }
 
 
@@ -409,7 +459,7 @@ margin-bottom:40px;
   display:none;
   float:left;
   width: 50%;
-  padding-top:10px;
+  padding-top:16px;
   padding-left: 10px;
 
 }
@@ -422,16 +472,10 @@ margin-bottom:40px;
 .menus {
   width: 50%;
   float: right;
-  padding-left: 23%;
+  /*padding-left: 25%;*/
+  /*margin-left: 20%;*/
 }
 
-/*.logoleft {
-  display:inline-block;
-  padding-top: 0px;
-  font-size: 18px;
-  color: gray;
-  font-weight: 400;
-}*/
 
 .sticky {
   display: inline-block;
@@ -449,8 +493,6 @@ margin-bottom:40px;
   font-size: 16px;
   margin-bottom: 18px;
 }
-
-
 
 .aboutMenu {
   float:left;
@@ -490,31 +532,26 @@ margin-bottom:40px;
 }
 
 .foodgroup {
-/*margin-left: 25%;*/
-float:none;
-width:100%;
-/*font-size: 18px;
-*/}
+  float:right;
+}
+
+.foodgroup li {
+  padding-left: 12px;
+}
 
 .flavorgroup {
-/*margin-left: 25%;*/
-float:none;
-width: 100%;
-/*margin-right: 6px;*/
-margin-top: -3px;
-margin-bottom: 6px;
+  clear: both;
+  float:right;
+  margin-right: -10px;
+  margin-top: -3px;
+  margin-bottom: 6px;
 }
 
 .flavorgroup li {
-font-size: 18px;
-font-weight: 600;
-display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
 }
-
-
-/*a:hover {
-    text-decoration: underline;
-}*/
 
 #forum a {
   border: 2px solid white;
@@ -562,6 +599,15 @@ display: inline-block;
 #resources-engaged {
   border: 2px solid black;
   padding: 2px 4px;
+}
+
+#share {
+  background-color: black;
+  padding:2px 6px;
+}
+
+#share a {
+    color:white;
 }
 
 
@@ -619,6 +665,28 @@ display: inline-block;
   padding: 20px;
 }
 
+/* SLIDE SHOW */
+
+.slideshow {
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  clear:both;
+}
+
+.caption {
+  float:left;
+}
+
+.slidebox {
+  width: 600px;
+}
+
+.slidebox img {
+  max-width: 800px;
+  max-height: 400px;
+}
 
 
 /******************************************
@@ -845,9 +913,9 @@ float:left;
 background-color: white;
 }
 
-.project-card img {
+.project-header img {
   padding-bottom: 20px;
-  max-width: 100%;
+  max-width: 75%;
 }
 
 .project-card-heading {
@@ -954,17 +1022,6 @@ background-color: white;
   width: 20%;
   float:left;
   margin-bottom: 12px;
-}
-
-.slideshow {
-  margin-top: 12px;
-  margin-right: 12px;
-  width: 100%;
-  clear:both;
-}
-
-.caption {
-  float:left;
 }
 
 .forwardBack {
