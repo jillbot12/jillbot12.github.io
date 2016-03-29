@@ -1266,10 +1266,23 @@ padding: 10px 10px;
 /* CONTACT PAGE
 /*******************************************/
 
-#contact-engaged {
+/*#contact-engaged {
   border: 2px solid gray;
   padding: 1px 4px;
+}*/
+
+#contact-engaged {
+  background-color: gray;
+  padding: 2px 4px;
+  margin-top: -20px;
+/*  margin-left: 8px;*/
 }
+
+#contact-engaged a {
+  color: white;
+}
+
+
 
 .contactInfo {
   width:75%;
