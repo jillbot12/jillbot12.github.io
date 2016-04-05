@@ -52,6 +52,7 @@ $('ul.filter-list li').click(function() {
 	if ($(this).parent().hasClass('foodgroup-a')) {
 		$(this).siblings().removeClass('active');
 	}
+
 	//if the current is all and all is clicked, everything shows
 	// if (current === 'all') {
 	// 	$grid.isotope({ filter: '*' });
@@ -59,6 +60,10 @@ $('ul.filter-list li').click(function() {
 		// $('.all').hide();
 	//otherwise filter the current so that the class with the same name as that of the id selected shows
 	// } else {
+
+
+
+
 		var filterTerms = [];
 		// Find all the li's with the 'active' class and loop through them.
 		$('li.active').each(function() {
