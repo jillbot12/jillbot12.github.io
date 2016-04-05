@@ -48,15 +48,15 @@ $('ul.filter-list li').click(function() {
 	var current = $(this).attr('name');
 	//give the selected items the class of "active"
 	$(this).toggleClass('active');
-
-	if ($(this).parent().hasClass('foodgroup')) {
+	//remove the active class from other "foodgroup" items when another one of them is clicked
+	if ($(this).parent().hasClass('foodgroup-a')) {
 		$(this).siblings().removeClass('active');
 	}
 	//if the current is all and all is clicked, everything shows
 	// if (current === 'all') {
 	// 	$grid.isotope({ filter: '*' });
 	// 	//do not show the li with the id all initially
-	// 	$('.all').hide();
+		// $('.all').hide();
 	//otherwise filter the current so that the class with the same name as that of the id selected shows
 	// } else {
 		var filterTerms = [];

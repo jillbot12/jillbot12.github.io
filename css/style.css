@@ -56,6 +56,37 @@ Developer @GA in NYC
   text-transform: uppercase;
 }
 
+.excerpt {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.2em;
+  margin-top: -14px;
+  padding:0px 8px 20px 8px;
+  color:black;
+  font-weight: 200;
+}
+
+.date {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.2em;
+  margin-top: -14px;
+  padding:0px 8px 20px 8px;
+  color:black;
+  font-weight: 600;
+
+}
+
+.date-label {
+  font-size: 14px;
+  text-align: left;
+  color:black;
+  font-weight: 600;
+  float: left;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+
 .tribe-item {
   /*background: rgba(164,25,45,0.7);*/
   background: rgba(143,0,199,0.7);
@@ -508,13 +539,6 @@ padding-bottom:20px;
   margin-top: -18px;
 }
 
-.aboutMenuLine {
-  width:80%;
-  border-top: 1px solid black;
-  margin-top:-40px;
-}
-
-
 .aboutMenu li {
   display: inline-block;
   margin: 8px;
@@ -545,33 +569,45 @@ padding-bottom:20px;
   float:right;
 }
 
+.foodgroup-a {
+  float:right;
+  margin-right: 10px;
+}
+
 .foodgroup li {
   padding-left: 12px;
+}
+
+.foodgroup-a li {
+  font-size: 18px;
+  margin-left: 4px;
 }
 
 .flavorgroup {
   clear: both;
   float:right;
-  margin-right: -10px;
+  margin-right: 10px;
   margin-top: -3px;
   margin-bottom: 6px;
 }
 
 .flavorgroup li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   display: inline-block;
 }
 
 #forum a {
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 2px 4px;
 }
 
 #forum a:hover,
 #forum.active a {
+  background-color:black;
   border: 2px solid black;
   padding: 2px 4px;
+  color: white;
 }
 
 #forum-engaged {
@@ -580,14 +616,16 @@ padding-bottom:20px;
 }
 
 #project a {
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 2px 4px;
 }
 
 #project a:hover,
 #project.active a {
+  background-color:black;
   border: 2px solid black;
   padding: 2px 4px;
+  color:white;
 }
 
 #project-engaged {
@@ -596,20 +634,24 @@ padding-bottom:20px;
 }
 
 #resources a {
-  border: 2px solid white;
+  border: 2px solid black;
   padding: 2px 4px;
 }
 
 #resources a:hover,
 #resources.active a {
+  background-color:black;
   border: 2px solid black;
   padding: 2px 4px;
+  color: white;
 }
 
 #resources-engaged {
   border: 2px solid black;
   padding: 2px 4px;
 }
+
+
 
 #share {
   background-color: black;
@@ -618,6 +660,10 @@ padding-bottom:20px;
 
 #share a {
     color:white;
+}
+
+#all a {
+  color: #DEDEDE;
 }
 
 
@@ -648,7 +694,7 @@ padding-bottom:20px;
 #shelter a,
 #shelter a:visited,
 #shelter.active a {
-  color: rgb(12,191,207);
+  color: #0cbfcf;
   padding:2px 4px;
 }
 #shelter.active a {
