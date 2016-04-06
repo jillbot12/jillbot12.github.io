@@ -198,6 +198,10 @@ Developer @GA in NYC
   font-size: 14px;
 }
 
+.aboutMenu li a {
+  color:gray;
+}
+
 #tagline {
   display: none;
 }
@@ -552,9 +556,11 @@ padding-bottom:20px;
 .aboutMenu li {
   display: inline-block;
   margin: 8px;
-
-/*  padding: -20px 10px;*/
   font-weight: 400;
+}
+
+.aboutMenu li a {
+  color:gray;
 }
 
 .filter-list.foodgroup.flavorgroup ul{
@@ -662,13 +668,13 @@ padding-bottom:20px;
   padding: 2px 4px;
 }
 
-#share {
+/*#share {
   background-color: black;
   padding:2px 6px;
 }
 
 #share a {
-    color:white;
+    color:white;*/
 }
 
 #all a {
