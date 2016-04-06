@@ -746,7 +746,9 @@ padding-bottom:20px;
   padding: 20px;
 }
 
-/* SLIDE SHOW */
+/******************************************
+/* SLIDE SHOW
+/*******************************************/
 
 .slideshow {
   margin-top: 12px;
@@ -773,10 +775,52 @@ padding-bottom:20px;
   max-height: 400px;
 }
 
-.slideboxLearn img {
+/*.slideboxLearn img {
   max-width: 100%
+}*/
+
+.instructions img {
+  max-width: 50%;
+  max-height: 100%;
+  float:left;
 }
 
+.instructions p {
+  max-width: 40%;
+  float:left;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 5%;
+  margin-left: 5%;
+}
+
+
+
+
+/* SOCIAL LINKS */
+
+
+.social-share {
+  width: 400px;
+  height: 80px;
+  margin-top: 60px;
+  float:left;
+}
+
+.social-share li{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display:inline-block;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.social-share ul li img {
+  float:left;
+  width: 30px;
+/*  padding-right: 10px;*/
+}
 
 /******************************************
 /* RESOURCE PANEL
