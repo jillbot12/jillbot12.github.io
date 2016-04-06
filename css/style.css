@@ -454,6 +454,7 @@ header nav ul li {
   left: 0;
   z-index: 9999;
   width: 100%;
+  height: 85px;
 }
 
 nav {
@@ -472,7 +473,7 @@ padding-bottom:20px;
   width: 40px;
   float:left;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .social img {
@@ -485,7 +486,7 @@ padding-bottom:20px;
   display:none;
   width: 50%;
   float:left;
-  padding-top:14px;
+  padding-top:20px;
   padding-left: 10px;
 
 }
@@ -1277,17 +1278,17 @@ padding: 10px 10px;
 }*/
 
 #about-engaged {
-  background-color: gray;
-  padding: 2px 4px;
+/*  padding: 2px 4px;
   margin-top: -20px;
-  margin-left: 8px;
+  margin-left: 8px;*/
 }
 
 #about-engaged a {
-  color: white;
+  text-decoration: underline;
+  color:black;
 }
 
-#about {
+/*#about {
   background-color: white;
   padding: 2px 4px;
   margin-top: -20px;
@@ -1296,7 +1297,7 @@ padding: 10px 10px;
 
 #about a {
   color: gray;
-}
+}*/
 
 .whats {
   width: 33.3%;
@@ -1345,18 +1346,17 @@ padding: 10px 10px;
   padding: 1px 4px;
 }*/
 
-#contact-engaged {
+/*#contact-engaged {
   background-color: gray;
   padding: 2px 4px;
   margin-top: -20px;
-/*  margin-left: 8px;*/
 }
+*/
 
 #contact-engaged a {
-  color: white;
+  text-decoration: underline;
+  color:black;
 }
-
-
 
 .contactInfo {
   width:75%;
