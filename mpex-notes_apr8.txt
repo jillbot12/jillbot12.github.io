@@ -1,0 +1,64 @@
+MPEX
+
+TO FIX:
+- alignment of right nav when decision is made on labels
+- incorporate ALL in toggling
+- slideshow weirdness itself
+- slideshow affecting isotope on interior pages
+- give weight to MAKE and LEARN in index (is this javascript/isotope/wordpress?)
+- CMS for LEARN pieces
+- best format for LEARN slideshows (image on top? what if no image included default)
+- taking existing gallery attachments and sending to felicity
+- better way for CP to add galleries (is it in fact as bad as it used to be given new WP upgrade?
+
+
+ALERTS TO CP:
+- intern time for content entry for Resource PDFs
+- style with all posts having header image - do you want this? not set up in old posts and can be redundant where you already placed same featured image at top
+- making sure captions are properly added
+
+
+User:  admin
+
+Pass:  Rzadigital1
+
+mpex_wordpress
+HfvdHAct#d6KzBF(*k
+
+
+TERMINOLOGY
+If we change it to “think, make, learn” then how do we refer to these in the pages for “previous and next”
+
+Next in THINK
+Next in MAKE
+Next in LEARN
+
+or change it all to simply “NEXT” and “PREVIOUS”
+
+///////////////
+HELP FROM Lara:
+
+Slideshow with Flickity:
+- not always working, pictures get stuck
+- first image great, next ones teeny
+- seems to be affecting the Isotope gallery below, making one column
+
+
+QUESTIONS FOR LARA:
+- why when I sometimes try to comment stuff out in php does it not always work?
+
+- why are images not appearing?
+
+- it seems that the featured image is automatically appearing at the top of all posts, how do I remove this?
+
+- large images in post body, looking stretched and seeming to have their own wp-oriented classes that are overriding the css I made “image.alignnone.size-large.wp-image-1567” // going back into the post and making sure “large’ was selected brought the image back into the proportions of the page.
+
+- existing video plugins seem to make the videos super small. i edited the plugin with CSS to make the max width 75% (to match the page alignment) which makes it more responsive as well, but this only worked for vimeo, not youtube
+
+- images in posts are not responsive, after making them “large’ in the image settings (even though they mostly already were) I thought this was fixed but it doesn’t stay put. This works with images on PAGES but not in POSTS. I added height and width auto to the CSS, trying to figure out why it is not working with POSTS.
+
+-weird extra spaces that are not showing on existing site within posts, but that get deleted then show up again, and don’t stay deleted until i remove them in the html window in wordpress cms
+
+- not finding the galleries that come with the PROJECT pages in the CMS
+
+
