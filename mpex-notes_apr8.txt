@@ -3,13 +3,35 @@ MPEX
 TO FIX:
 - alignment of right nav when decision is made on labels
 - incorporate ALL in toggling
+- extra spacing between paragraphs
+- extra padding randomly showing up
+
 - slideshow weirdness itself
 - slideshow affecting isotope on interior pages
+- slideshow controls showing up on regular pages
+
+- make arrow disappear when no more posts show
+- how to make it work with project and resource pages
+
+- janky upload system vs new wordpress vs new formats
+
+
+TO CREATE:
 - give weight to MAKE and LEARN in index (is this javascript/isotope/wordpress?)
-- CMS for LEARN pieces
 - best format for LEARN slideshows (image on top? what if no image included default)
-- taking existing gallery attachments and sending to felicity
 - better way for CP to add galleries (is it in fact as bad as it used to be given new WP upgrade?
+
+- gravity forms 
+- weighted relationship of projects and resources on main page
+- random appearance of share cards
+- search functionality (set up search page styles)
+
+
+
+
+DISCREPANCIES:
+- Projects now need a header image
+
 
 
 ALERTS TO CP:
@@ -35,6 +57,24 @@ Next in LEARN
 
 or change it all to simply “NEXT” and “PREVIOUS”
 
+
+////////////
+MAIN TO-DOs with LARA
+
++ gravity forms (get the template designed ahead of time)
++ home page isotope
++ adding next post/previous post functionality
++ adding isotope to internal pages
++ creating stage and real site
++ moving url etc.
+
+
+
+<li><a href="/about.html">ABOUT</a></li>
+
+
+
+
 ///////////////
 HELP FROM Lara:
 
@@ -47,18 +87,14 @@ Slideshow with Flickity:
 QUESTIONS FOR LARA:
 - why when I sometimes try to comment stuff out in php does it not always work?
 
-- why are images not appearing?
-
-- it seems that the featured image is automatically appearing at the top of all posts, how do I remove this?
-
-- large images in post body, looking stretched and seeming to have their own wp-oriented classes that are overriding the css I made “image.alignnone.size-large.wp-image-1567” // going back into the post and making sure “large’ was selected brought the image back into the proportions of the page.
-
 - existing video plugins seem to make the videos super small. i edited the plugin with CSS to make the max width 75% (to match the page alignment) which makes it more responsive as well, but this only worked for vimeo, not youtube
 
 - images in posts are not responsive, after making them “large’ in the image settings (even though they mostly already were) I thought this was fixed but it doesn’t stay put. This works with images on PAGES but not in POSTS. I added height and width auto to the CSS, trying to figure out why it is not working with POSTS.
 
--weird extra spaces that are not showing on existing site within posts, but that get deleted then show up again, and don’t stay deleted until i remove them in the html window in wordpress cms
+-weird extra spaces that are not showing on existing site within posts, but that get deleted then show up again, and don’t stay deleted until i remove them in the html window in wordpress cms.
 
-- not finding the galleries that come with the PROJECT pages in the CMS
+- extra space added in general, fixing in the CSS but is this problematic? Left of the social icons in header for instance.
 
+
+- removing Flickity controls from non-project pages
 
