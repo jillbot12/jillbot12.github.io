@@ -1330,6 +1330,40 @@ padding: 10px 10px;
 }
 
 
+.on-post-sharecard {
+  float:left;
+  margin-top: 20px;
+  margin-left: 25%;
+  background-color: white;
+  width:50%;
+  border: 2px solid black;
+
+}
+
+.on-post-sharecard p {
+  float:left;
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 40%;
+  text-align: center;
+}
+
+.on-post-sharecard h2 {
+  float:left;
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 40%;
+  background-color: rgba(143,0,199,0.7);
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+.on-post-sharecard img {
+  width:50%;
+}
+
+
 /******************************************
 /* ABOUT PAGE
 /*******************************************/
