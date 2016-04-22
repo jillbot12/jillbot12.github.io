@@ -567,6 +567,7 @@ padding-bottom:20px;
     text-align: right;
 }
 
+
 .interior {
   line-height: 65px;
   color:gray;
@@ -601,7 +602,7 @@ padding-bottom:20px;
 .flavorgroup {
   clear: both;
   float:right;
-  margin-right: 10px;
+  margin-right: 68px;
   margin-top: -3px;
   margin-bottom: 6px;
 }
@@ -610,7 +611,7 @@ padding-bottom:20px;
   font-size: 16px;
   font-weight: 600;
   display: inline-block;
-  margin-left: 6px;
+  margin-left: 5px;
 }
 
 #forum a {
@@ -676,19 +677,22 @@ padding-bottom:20px;
     color:white;*/
 }
 
-#all a {
-  border: 2px solid #DEDEDE;
+/*some issues with the ALL grayed out or with a box prior to engaged...*/
+
+#all li {
+  background-color: black
+  border: 2px solid black;
   padding: 2px 4px;
-  color: #DEDEDE;
+  color: white;
 }
 
-#all a:hover,
+/*#all a:hover,
 #all.active a {
   background-color: #DEDEDE;
   border: 2px solid  #DEDEDE;
   padding: 2px 4px;
   color: white;
-}
+}*/
 
 
 #tribe a,
@@ -1255,7 +1259,7 @@ background-color: white;
   position: fixed; 
 /*  height: 100%;*/
 /*  margin: 0px auto;*/
-  background-color: white;
+/*  background-color: white;*/
   margin-top: 20px;
   float: left;
   margin-left: 5px;
@@ -1313,6 +1317,15 @@ padding: 10px 10px;
 .sidebar-label-up {
   border: 1px solid #231f20;
   margin:10px;
+  background-color: white;
+}
+
+.side-1 {
+  background-color: white;
+}
+
+.side-2 {
+  margin-top: 20px;
   background-color: white;
 }
 

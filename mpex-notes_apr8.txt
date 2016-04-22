@@ -1,5 +1,6 @@
 MPEX
 
+——————————————
 TO FIX:
 - alignment of right nav when decision is made on labels
 - incorporate ALL in toggling
@@ -10,80 +11,80 @@ TO FIX:
 - slideshow affecting isotope on interior pages
 - slideshow controls showing up on regular pages
 
-- make arrow disappear when no more posts show
-- how to make it work with project and resource pages
+- make next/prev arrow disappear when no more posts show
+- how to make next/prev work with project and resource pages
 
-- janky upload system vs new wordpress vs new formats
+- janky upload system for galleries/attachments vs new wordpress vs new formats
+
+- videos from Facebook not loading
 
 
+——————————————
 TO CREATE:
-- give weight to MAKE and LEARN in index (is this javascript/isotope/wordpress?)
-- best format for LEARN slideshows (image on top? what if no image included default)
+
+//SINGLE PAGES
+- categories displays as bars
 - better way for CP to add galleries (is it in fact as bad as it used to be given new WP upgrade?
+- sidebar
+	- for parts and tools on resource pages
+	- for add your own on resource pages
+- filter nav on every page, linking back to home 
 
-- gravity forms 
-- weighted relationship of projects and resources on main page
+
+//HOME PAGE
+- give weight to PROJECTS and RESOURCES in index (is this javascript/isotope/wordpress?)
 - random appearance of share cards
-- search functionality (set up search page styles)
+- search functionality (set up search page styles - like main page isotope?)
+
+
+
+//RESOURCE PAGES
+- best format for RESOURCE slideshows (image on top? what if no image included default)
+- gravity forms 
+	- Flickity slideshow within Gravity Forms
 
 
 
 
+
+——————————————
 DISCREPANCIES:
 - Projects now need a header image
 
 
-
+——————————————
 ALERTS TO CP:
 - intern time for content entry for Resource PDFs
 - style with all posts having header image - do you want this? not set up in old posts and can be redundant where you already placed same featured image at top
 - making sure captions are properly added
 
-
-User:  admin
-
-Pass:  Rzadigital1
-
-mpex_wordpress
-HfvdHAct#d6KzBF(*k
+- random posts may need to be edited due to weirdness like Gowanus shellfish post
 
 
-TERMINOLOGY
-If we change it to “think, make, learn” then how do we refer to these in the pages for “previous and next”
-
-Next in THINK
-Next in MAKE
-Next in LEARN
-
-or change it all to simply “NEXT” and “PREVIOUS”
 
 
-////////////
+QUESTIONS:
+- will you ever want to put slideshows in blog posts?
+
+
+
+
+
+——————————————
 MAIN TO-DOs with LARA
 
 + gravity forms (get the template designed ahead of time)
 + home page isotope
-+ adding next post/previous post functionality
 + adding isotope to internal pages
++ adding next post/previous post functionality to additional pages
 + creating stage and real site
 + moving url etc.
 
 
 
-<li><a href="/about.html">ABOUT</a></li>
 
 
-
-
-///////////////
-HELP FROM Lara:
-
-Slideshow with Flickity:
-- not always working, pictures get stuck
-- first image great, next ones teeny
-- seems to be affecting the Isotope gallery below, making one column
-
-
+——————————————
 QUESTIONS FOR LARA:
 - why when I sometimes try to comment stuff out in php does it not always work?
 
@@ -97,4 +98,38 @@ QUESTIONS FOR LARA:
 
 
 - removing Flickity controls from non-project pages
+
+
+
+
+
+
+TIMBER
+Twig template-ing language 
+cleaner syntax instead of php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mpex_wordpress
+HfvdHAct#d6KzBF(*k
 
