@@ -767,6 +767,7 @@ padding-bottom:20px;
 
 .slidebox {
   width: 75%;
+  height: 100%;
 }
 
 .slideboxLearn {
@@ -1398,7 +1399,7 @@ padding: 10px 10px;
 .whats {
   width: 33.3%;
   float:left;
-  padding:5px;
+  padding:20px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -1432,6 +1433,64 @@ padding: 10px 10px;
   width: 100%;
   margin-top: 20px;
 }
+
+.aboutButtons {
+  clear:both;
+/*  margin-left: 5%;
+*/  padding-top:20px;
+}
+
+.aboutButtonsSingle {
+  width: 25%;
+  padding:0px;
+  float:left;
+}
+
+.aboutButtons p {
+  font-size: 14px;
+  font-weight: 600;
+  float:left;
+}
+
+.tribeButton {
+  background-color:#8F00C7;
+  padding:2px 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  float:left;
+}
+
+.foodButton {
+  background-color:#FF0D05;
+  padding:2px 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  float:left;
+}
+.shelterButton {
+  background-color:#0cbfcf;
+  padding:2px 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  float:left;
+}
+.magicButton {
+  background-color:#FAC400;
+  padding:2px 4px;
+  color:white;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  float:left;
+}
+
+
 
 /******************************************
 /* CONTACT PAGE
